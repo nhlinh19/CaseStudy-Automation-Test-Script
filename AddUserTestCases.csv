@@ -1,0 +1,21 @@
+﻿No.,UserRole,Status,EmployeeName,Username,Password,ConfirmPassword,Field,ExpectedResult
+1,Select,,,,,,UserRole,0
+2,Admin,,,,,,UserRole,1
+3,ESS,,,,,,UserRole,1
+4,,,Lam,,,,EmployeeName,0
+5,,,Linh Nguyen Hoang,,,,EmployeeName,1
+6,,Select,,,,,Status,0
+7,,Enabled,,,,,Status,1
+8,,Disabled,,,,,Status,1
+9,,,,admin,,,Username,0
+10,,,,nhlinh234,,,Username,1
+11,,,,,Abc@12,,Password,0
+12,,,,,ABC@12345,,Password,0
+13,,,,,abc@12345,,Password,0
+14,,,,,ABC#efgh,,Password,0
+15,,,,,ABCefg1234,,Password,0
+16,,,,,ABC@egh123,,Password,1
+17,,,,,ABC@egh123,ABC@egh122,ConfirmPassword,0
+18,,,,,ABC@egh123,ABC@egh123,ConfirmPassword,1
+19,Admin,Enabled,Linh Nguyen Hoang,nhlinh234,ABC@egh123,ABC@egh123,All,1
+20,Admin,Enabled,Linh Nguyen Hoang,nhlinh234,ABC@egh123,ABC@egh123,All,0
